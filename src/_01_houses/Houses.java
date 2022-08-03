@@ -39,29 +39,29 @@ public class Houses {
 		if (height.equals("small")) {
 
 			rob.move(60);
-			rob.turn(90);
-			rob.move(50);
-			rob.turn(90);
+			pointyroof();
 			rob.move(60);
 		}
 		if (height.equals("medium")) {
 			rob.move(100);
-			rob.turn(90);
-			rob.move(50);
-			rob.turn(90);
+			pointyroof();
 			rob.move(100);
 		}
 		
 		if (height.equals("large")) {
 			rob.move(200);
-			rob.turn(90);
-			rob.move(50);
-			rob.turn(90);
+	flatroof();
 			rob.move(200);
 		}
 		rob.turn(-90);
 	}
-
+public void pointyroof() {
+	rob.turn(45);
+	rob.move(20);
+	rob.turn(90);
+	rob.move(20);
+	rob.turn(45);
+}
 	public void flatroof() {
 		rob.turn(90);
 		rob.move(50);
